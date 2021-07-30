@@ -81,9 +81,10 @@ public class banglore_quick_commute {
         bc.getinput();
         findShortestDistance obj = new findShortestDistance();
         for (int dest : intermediatearr) {
+            if(costMatrix[bc.source][dest]!=9999)
+                System.out.println("Direct road distance "+names[bc.source]+" --> "+names[dest]+" distance = "+costMatrix[bc.source][dest]+"km");
+            else System.out.println("There is no direct road which connects "+names[bc.source]+" and "+names[dest]);
             obj.find(bc.source, dest);
-            System.out.println(names[bc.source]+" --> "+names[dest]+" distance = "+costMatrix[bc.source][dest]);
-
             bc.source=dest;
         }
     }

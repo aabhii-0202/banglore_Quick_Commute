@@ -36,7 +36,7 @@ public class findShortestDistance {
             }
         }
         for(i=1;i<nodes;i++)
-            if(i== dest) System.out.println(names[src]+" --> : "+names[i]+". Distance = : "+distance[i]);
+            if(i== dest) System.out.println("Distance calculated by Djikstras algo "+names[src]+" --> : "+names[i]+". Distance = : "+distance[i]+"km");
 
     }
 
