@@ -11,6 +11,7 @@ public class findShortestDistance {
         compute(nodes,src);
     }
 
+
     private void compute(int n,int src){
         int i,c,u,minpos=1;
         float minimum;
@@ -37,8 +38,5 @@ public class findShortestDistance {
         }
         for(i=1;i<nodes;i++)
             if(i== dest) System.out.println("Distance calculated by Djikstras algo "+names[src]+" --> : "+names[i]+". Distance = : "+distance[i]+"km");
-
     }
-
-
 }
